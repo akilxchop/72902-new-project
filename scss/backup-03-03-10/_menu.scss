@@ -1,0 +1,130 @@
+.sidebar{
+    
+    .mega-jackpot{
+        text-align: center;
+        padding: 0 20px 20px;
+        position: relative;
+        border-bottom: 1px solid rgb(238 238 238 / 20%);
+
+        h2{
+            font-size: 20px;
+            color: $yellow_color;
+            font-family: $font_led_calc;
+            margin: 0;
+        }
+
+        span{
+            font-size: 24px;
+            color: $yellow_color;
+            font-weight: 400;
+            font-family: $font_led_board ;
+        }
+    }
+
+    .spin-win{
+        padding: 15px 20px 0;
+        .spin-btn{
+            padding: 4px !important;
+            img{
+                max-width: 100%;
+                height: 32px;
+            }
+        }
+        a.btn{
+            margin-bottom: 15px;             
+        }
+
+    }
+
+    .menu-list{
+        margin-top: 30px;
+
+        h6{
+            padding: 0 20px;
+        }
+
+        ul{
+            padding: 0;
+
+            li{
+                padding: 9px 20px;
+                line-height: 1;
+                border-bottom: 1px solid rgb(238 238 238 / 20%);
+                position: relative;
+                transition: all 0.5s;
+
+                span{
+                    padding-right: 10px;
+                    
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        -o-object-fit: contain;
+                        object-position: center center;
+                    }
+                }
+
+                a{
+                    font-size: 14px;
+                    font-family: Mark-Regular, serif;
+                    color: $social_bg;
+                    word-wrap: break-word;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &:hover{
+                    background-color: $yellow_color;
+                }
+            }
+
+        }   
+    }
+
+    .cust-detail-center{
+        margin-top: 26px;
+        padding: 0 20px;
+
+        a.btn{
+            margin-bottom: 15px;
+        }
+
+        .light-dark-toggle{
+            margin-bottom: 15px;
+            background-color: $gray_color_3;
+            padding: 4px 3.5px;
+            border-radius: 10px;
+
+            a.btn{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+}
+
+.light-theme{ 
+    .sidebar {
+        .mega-jackpot{
+            border-color: $gray_color_5;
+        }
+
+        h6{
+            color: $gray_mid_color;
+        }
+        .menu-list {
+            ul {
+                li {
+                    border-color: $gray_color_5;
+                    a {
+                        color: $gray_mid_color;
+
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

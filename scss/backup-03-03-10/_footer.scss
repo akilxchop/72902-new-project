@@ -1,0 +1,183 @@
+footer{
+    border-top: 1px solid rgba(238, 238, 238, 0.2);
+    padding: 43px 0 15px 0;
+    color: $social_bg;
+    .footer-wrap{
+        max-width: 940px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-top{
+        border-bottom: 1px solid rgba(238, 238, 238, 0.2);
+        grid-template-columns: repeat(6,minmax(0,1fr));
+        display: grid;
+        grid-gap: 10px;
+        padding-bottom: 30px;
+
+        h4{
+            font-size: $px14;
+            font-family: $mark_regular;
+            font-weight: 550;
+            line-height: 1.6;
+            word-wrap: break-word;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .n-links{
+            ul{
+                padding: 0;
+                margin: 0;
+    
+                li{
+                    margin-bottom: 0;
+    
+                    a{
+                        font-family: $mark_regular;
+                    }
+    
+                    &:nth-last-child(1){
+                        margin: 0;
+                    }
+    
+                }
+            }
+
+            &.footer-menu{
+                ul{
+                    li{
+                        margin-bottom: 10px;
+    
+                        a{
+                            font-size: $px14;
+                            /*color: $social_bg;*/
+                        }
+    
+                    }
+                }
+            }
+        }
+        
+        .social-icons{
+            margin-top: 25px;
+        }
+
+    }
+
+    .footer-middle{
+        padding: 30px 0 10px 0;
+        border-bottom: 1px solid rgba(238, 238, 238, 0.2);
+
+        ul{
+            padding: 0;
+            margin: 0;
+    
+            li{
+                text-align: center;
+                padding-bottom: 30px;
+                margin: 0 15px;
+    
+                a{
+                    display: inline-block;
+                }
+
+            }
+    
+        }
+    }
+
+    .footer-bottom{
+        padding: 41.5px 0 0 0;
+
+        .copywrite{
+            margin-bottom: 24px;
+        }
+
+        p{
+            font-size: $px14;
+            font-family: $mark_regular;
+            font-weight: 400;
+            line-height: 1.3;
+            margin: 0;
+            /*color: $social_bg;*/
+        }
+
+    }
+
+}
+
+
+.light-theme {
+	footer{
+    color: $gray_mid_color ;
+  }
+   .footer-top, footer ,
+  .footer-middle {
+  	border-color: $gray_color_5;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+    footer{
+        padding:40px 0 85px;
+
+        .mobile-footer-tab{
+            background-color: $dark_gray_color ;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+
+            ul{
+                padding-top: 0;
+                padding-left: 0;
+                margin: 0;
+
+                li{
+                    padding: 10px 10px 12px 10px;
+                    width: 20%;
+                    position: relative;
+
+                    a{
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        text-align: center;     
+                        text-transform: uppercase;
+                        font-family: $mark_regular;     
+                        font-weight: 400;
+                        color: $white;    
+                        font-size: 10px;    
+                        grid-gap:3px;    
+                        
+                        &:hover{
+
+                            color: $yellow_color;
+
+                            span{
+                                svg{
+                                    path{
+                                        fill: $yellow_color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    span.count{
+                        position: absolute;
+                        top: 5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-left: 20px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+

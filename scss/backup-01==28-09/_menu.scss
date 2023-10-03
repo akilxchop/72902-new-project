@@ -1,0 +1,150 @@
+.sidebar{
+    
+
+    .mega-jackpot{
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+        border-bottom: 1px solid rgb(238 238 238 / 20%);
+
+        h2{
+            font-size: 20px;
+            color: $yellow_color;
+            font-family: $font_led_calc;
+            margin: 0;
+        }
+
+        span{
+            font-size: 24px;
+            color: $yellow_color;
+            font-weight: 400;
+            font-family: $font_led_board ;
+        }
+
+        &:before{
+            content: ' ';
+            position: absolute;
+            left: -20px;
+            bottom: -1px;
+            width: 20px;
+            height: 1px;
+            background-color: rgb(238 238 238 / 20%); 
+        }
+        &:after{
+            content: ' ';
+            position: absolute;
+            right: -20px;
+            bottom: -1px;
+            width: 20px;
+            height: 1px;
+            background-color: rgb(238 238 238 / 20%); 
+        }
+
+    }
+
+    .spin-win{
+        padding-top: 15px;
+
+        a.btn{
+            margin-bottom: 15px;
+        }
+
+    }
+
+    .menu-list{
+        margin-top: 30px;
+
+        ul{
+            padding: 0;
+            li{
+                padding: 9px 0;
+                line-height: 1;
+                border-bottom: 1px solid rgb(238 238 238 / 20%);
+                position: relative;
+
+                &:before{
+                    content: ' ';
+                    position: absolute;
+                    left: -20px;
+                    bottom: -1px;
+                    width: 20px;
+                    height: 1px;
+                    background-color: rgb(238 238 238 / 20%); 
+                }
+                &:after{
+                    content: ' ';
+                    position: absolute;
+                    right: -20px;
+                    bottom: -1px;
+                    width: 20px;
+                    height: 1px;
+                    background-color: rgb(238 238 238 / 20%); 
+                }
+
+                span{
+                    padding-right: 10px;
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        -o-object-fit: contain;
+                        object-position: center center;
+                    }
+                }
+
+                a{
+                    font-size: 14px;
+                    font-family: Mark-Regular, serif;
+                    color: $social_bg;
+                    word-wrap: break-word;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+
+    .cust-detail-center{
+        margin-top: 26px;
+
+        a.btn{
+            margin-bottom: 15px;
+        }
+
+        .light-dark-toggle{
+            margin-bottom: 15px;
+            background-color: $gray_color_3;
+            padding: 4px 3.5px;
+            border-radius: 10px;
+
+            a.btn{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+}
+
+.light-theme{ 
+    .sidebar {
+        .mega-jackpot{
+            border-bottom: 1px solid $gray_color_5;
+        }
+
+        h6{
+            color: $gray_mid_color;
+        }
+        .menu-list {
+            ul {
+                li {
+                    a {
+                        color: $gray_mid_color;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,274 @@
+body{
+	background-color: $body-bg ;
+	color: $body-color;
+	margin: 0;
+ 	padding: 0;
+	font-size: $px14;
+	padding-top: 70px;
+}
+ul {
+	li {list-style: none}
+}
+body.light-theme {
+	color: $gray_mid_color;
+	background-color: $body_light_bg ;
+}
+.header{
+	background-color: $header_bg;
+	padding: 15px 0;
+	z-index: 123;
+	height: 70px;
+}
+
+.img-0 {
+	font-size: 0;
+}
+
+
+
+
+/*
+
+
+.mark_reg {
+	font-family:$font-family-sans-serif ;
+}
+.mark_med{
+	font-family:$font_mark_medium ;
+}
+.mark_bold{
+	font-family: $font_markPro_bold;
+}
+.led_board {
+	font-family:$font_led_board ;
+}
+.american_font {
+	font-family: $font_american_type ;
+}
+.led_calculator{
+	font-family:$font_led_calc ;
+}*/
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*----------- toggle css -----------*/
+
+header{
+
+	.nav-toggle {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+		.hamburger{
+			width: 24px;
+			height: 24px;
+			position: relative;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;
+			cursor: pointer;
+		
+			span{
+				display: block;
+				position: absolute;
+				height: 3px;
+				width: 100%;
+				background: $white;
+				border-radius: 9px;
+				opacity: 1;
+				left: 0;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-transition: .25s ease-in-out;
+				-moz-transition: .25s ease-in-out;
+				-o-transition: .25s ease-in-out;
+				transition: .25s ease-in-out;
+		
+				&:nth-child(1) {
+					top: 4px;
+				}
+		
+				&:nth-child(2){
+					top: 10px;
+				}
+		
+				&:nth-child(3){
+					top: 10px;
+				}
+		
+				&:nth-child(4) {
+					top: 17px;
+				}
+		
+			}
+		
+			&.open{
+		
+				span{
+					&:nth-child(1) {
+						top: 18px;
+						width: 0%;
+						left: 50%;
+					}
+					&:nth-child(2) {
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+					&:nth-child(3) {
+						-webkit-transform: rotate(-45deg);
+						-moz-transform: rotate(-45deg);
+						-o-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+					}
+					&:nth-child(4) {
+						top: 18px;
+						width: 0%;
+						left: 50%;
+					}
+				}		  
+			}
+		}
+
+	}
+	
+	.header-left{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 242px;
+		width: 100%;
+	}
+
+	.header-right{
+		width: calc(100% - 242px);
+		padding: 0 8.35% 0 7.81%;
+
+		.logo {
+			a{
+				display: block;
+
+				figure{
+					margin: 0;
+				}
+			}
+		}
+
+	}
+
+	.header-btn {
+		grid-gap: 14px;
+		gap: 14px;
+	}
+
+	.login-deposit{
+		grid-gap: 14px;
+		gap: 14px;
+		display: none;
+
+		span{
+			position: relative;
+
+			.count{
+				position: absolute;
+				top: -7px;
+				right: -7px;
+				margin: 0;
+				width: 15px;
+				height: 15px;
+			}
+		}
+
+		.login-d{
+			cursor: pointer;
+
+			span{
+				margin-right: 5px;
+
+				.count{
+					margin: 0;
+				}
+			}
+
+
+		}
+
+		.toggle-dropdown{
+			margin-left: 5px;
+		}
+	}
+
+	// a.btn{
+	// 	font-size: 14px;
+	// 	font-family: $font_markPro_bold;
+	// 	font-weight: 400;
+	// 	width: 98.5px;
+	// 	padding: 0 10px;
+	// }
+
+	// .header-btn{
+	// 	a{
+	// 		text-transform: uppercase;
+	// 		width: auto;
+	// 	}
+	// }
+
+	&.login{
+		.login-deposit{
+			display: flex;
+		}
+	}
+
+}
+
+.count {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	background-color: #B08615;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: $px13 !important;
+	font-weight: 700;
+	color: #fff !important;
+	padding: 0;
+	padding-top: 2px;
+	border-radius: 50%;
+	font-family: $font_markPro_bold;
+} 
+
+
+@media screen and (max-width: 991px) {
+	
+	/*---------------------------*/
+
+	header{	
+
+		.header-left{
+			display: none;
+		}
+
+		.header-right{
+			padding: 0 8px;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+	}
+}
+

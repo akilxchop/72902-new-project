@@ -1,0 +1,109 @@
+footer{
+    border-top: 1px solid rgba(238, 238, 238, 0.2);
+    padding: 43px 0 15px 0;
+
+    .footer-wrap{
+        max-width: 940px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-top{
+        border-bottom: 1px solid rgba(238, 238, 238, 0.2);
+        grid-template-columns: repeat(6,minmax(0,1fr));
+        display: grid;
+        grid-gap: 10px;
+        padding-bottom: 30px;
+
+        h4{
+            color: $social_bg;
+            font-size: $px14;
+            font-family: $mark_regular;
+            font-weight: 550;
+            line-height: 1.6;
+            word-wrap: break-word;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .n-links{
+            ul{
+                padding: 0;
+                margin: 0;
+    
+                li{
+                    margin-bottom: 0;
+    
+                    a{
+                        font-family: $mark_regular;
+                    }
+    
+                    &:nth-last-child(1){
+                        margin: 0;
+                    }
+    
+                }
+            }
+
+            &.footer-menu{
+                ul{
+                    li{
+                        margin-bottom: 10px;
+    
+                        a{
+                            font-size: $px14;
+                            color: $social_bg;
+                        }
+    
+                    }
+                }
+            }
+        }
+        
+        .social-icons{
+            margin-top: 25px;
+        }
+
+    }
+
+    .footer-middle{
+        padding: 30px 0 10px 0;
+        border-bottom: 1px solid rgba(238, 238, 238, 0.2);
+
+        ul{
+            padding: 0;
+            margin: 0;
+    
+            li{
+                text-align: center;
+                padding-bottom: 30px;
+                margin: 0 15px;
+    
+                a{
+                    display: inline-block;
+                }
+
+            }
+    
+        }
+    }
+
+    .footer-bottom{
+        padding: 41.5px 0 0 0;
+
+        .copywrite{
+            margin-bottom: 24px;
+        }
+
+        p{
+            font-size: $px14;
+            font-family: $mark_regular;
+            font-weight: 400;
+            line-height: 1.3;
+            margin: 0;
+            color: $social_bg;
+        }
+
+    }
+
+}
