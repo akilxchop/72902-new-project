@@ -39,15 +39,13 @@
 		  margin: 20,
 		  dots:false,
 		  responsiveClass: true,
-		  smartSpeed: 1000,
+		  smartSpeed: 800,
 		  nav: true,
 		  items:2,
 		  autoWidth:true,
 		  arrows:false,
 		   touchDrag: false,
 		  mouseDrag : false,
-		  stopOnHover:true,
-		  autoplayHoverPause:true,
 		  responsive: {
 		  	319: {
 		     margin: 0

@@ -68,78 +68,14 @@ header{
 			width: 24px;
 			height: 24px;
 			position: relative;
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;
 			cursor: pointer;
-		
-			span{
-				display: block;
-				position: absolute;
-				height: 3px;
-				width: 100%;
-				background: $white;
-				border-radius: 9px;
-				opacity: 1;
-				left: 0;
-				-webkit-transform: rotate(0deg);
-				-moz-transform: rotate(0deg);
-				-o-transform: rotate(0deg);
-				transform: rotate(0deg);
-				-webkit-transition: .25s ease-in-out;
-				-moz-transition: .25s ease-in-out;
-				-o-transition: .25s ease-in-out;
-				transition: .25s ease-in-out;
-		
-				&:nth-child(1) {
-					top: 4px;
-				}
-		
-				&:nth-child(2){
-					top: 10px;
-				}
-		
-				&:nth-child(3){
-					top: 10px;
-				}
-		
-				&:nth-child(4) {
-					top: 17px;
-				}
-		
-			}
-		
-			&.open{
-		
-				span{
-					&:nth-child(1) {
-						top: 18px;
-						width: 0%;
-						left: 50%;
+
+			&:hover{
+				svg{
+					path{
+						fill: $yellow_color;
 					}
-					&:nth-child(2) {
-						-webkit-transform: rotate(45deg);
-						-moz-transform: rotate(45deg);
-						-o-transform: rotate(45deg);
-						transform: rotate(45deg);
-					}
-					&:nth-child(3) {
-						-webkit-transform: rotate(-45deg);
-						-moz-transform: rotate(-45deg);
-						-o-transform: rotate(-45deg);
-						transform: rotate(-45deg);
-					}
-					&:nth-child(4) {
-						top: 18px;
-						width: 0%;
-						left: 50%;
-					}
-				}		  
+				}
 			}
 		}
 
@@ -166,7 +102,6 @@ header{
 				}
 			}
 		}
-
 	}
 
 	.header-btn {
@@ -190,14 +125,28 @@ header{
 				width: 15px;
 				height: 15px;
 			}
+
+			&.icon-user{
+				width: 32px;
+				height: 32px;
+				display: block;
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				
+				span.count{
+					top: -3px;
+					right: -3px;
+				}
+			}
 		}
 
 		.login-d{
 			cursor: pointer;
 
 			span{
-				margin-right: 5px;
-
 				.count{
 					margin: 0;
 				}
@@ -206,18 +155,95 @@ header{
 
 		}
 
-		.toggle-dropdown{
-			margin-left: 5px;
+		.details{
+			font-family: $mark_regular;
+			font-weight: 400;
+			font-size: 13px;
+
+			.hide{
+				img{
+					width: 18px;
+				}
+			}
 		}
+		
+	}
+
+	.mobile-login-user{
+		display: none;
+
+		span{
+			position: relative;
+
+			.count{
+				position: absolute;
+				top: -7px;
+				right: -7px;
+				margin: 0;
+				width: 15px;
+				height: 15px;
+			}
+
+			&.icon-user{
+				width: 32px;
+				height: 32px;
+				display: block;
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				
+				span.count{
+					top: -3px;
+					right: -3px;
+				}
+			}
+		}
+	}
+
+	a.btn{
+		text-transform: uppercase;
 	}
 
 	&.login{
 		.login-deposit{
 			display: flex;
 		}
+
+		.btn{
+			&.hide-md{
+				display: none !important;
+			}
+		}
+	}
+
+	&.logo{
+
+
+		.header-left{
+			.casino-sports{
+				display: none !important;
+			}
+		}
+
+		.header-right{
+			justify-content: center !important;
+			padding: 0 10px;
+
+			.header-btn{
+				display: none !important;
+			}
+		}
+
+	}
+
+	.hide-text{
+		font-size: 14px;
 	}
 
 }
+
 .count {
 	display: inline-block;
 	margin: 0 0 0 10px;
@@ -229,12 +255,21 @@ header{
 	justify-content: center;
 	font-size: $px13;
 	font-weight: 700;
-	color: #fff;
+	color: #fff !important;
 	padding: 0;
+	padding-top: 2px;
 	border-radius: 50%;
-	font-family: 'Roboto Condensed';
-} 
+	font-family: $font_markPro_bold;
+	line-height: 1;
 
+	&.small-font{
+		font-size: 9px;
+	}
+
+	&.big-font{
+		font-size: $px13;
+	}
+} 
 
 @media screen and (max-width: 991px) {
 	
@@ -250,6 +285,52 @@ header{
 			padding: 0 8px;
 			justify-content: space-between;
 			width: 100%;
+		}
+
+		&.login {
+
+			.login-deposit{
+				display: none;
+			}
+
+			.mobile-login-user{
+				display: block;
+			}
+
+		}
+
+		.hide-text{
+			font-size: 0;
+		}
+
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		padding: 8px 0;
+		height: 56px;
+
+		.header-right {
+			padding: 0;
+			.logo {
+				max-width: 133px;
+				width: 100%;
+			}
+		}
+		.hide-text{
+			font-size: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+	header{
+
+		.header-btn {
+			.btn {
+				padding: 10px;
+			}
 		}
 
 	}
