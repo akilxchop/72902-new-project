@@ -165,6 +165,7 @@
 	}
 }
 
+
 @media screen and (max-width: 991px) {
 
 	.sidebar {
@@ -232,38 +233,6 @@
 					font-size: 17px;
 				}
 
-			}
-		}
-	}
-
-}
-
-@media screen and (max-width: 767px) {
-	.sidebar{
-		top: 56px;
-
-		.mobile-menu{
-			.menu-list {
-				ul{
-					width:765px;
-
-					li{
-						padding: 0 5px;
-					}
-				}
-			}
-		}
-	}
-
-}
-
-@media screen and (max-width: 521px) {
-	.sidebar{
-		.mobile-menu{
-			.menu-list {
-				ul{
-					width:690px;
-				}
 			}
 		}
 	}
