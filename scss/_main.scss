@@ -1,0 +1,37 @@
+
+.content-sec {
+	transition: all .3s ease;
+	padding-left: 250px;
+}
+
+.main-content {
+	.main-wrap{
+        max-width: 940px;
+        width: 100%;
+        margin: auto;
+
+        .card_wrapper:nth-last-child(1){
+            margin-bottom: 28px;
+        }
+
+    }
+}
+
+.content-width {
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .content-sec {
+        padding-top: 100px;
+        padding-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .content-sec {
+        padding-top: 85px;
+    }   
+}
