@@ -1,0 +1,136 @@
+.modal  {
+	background: rgba(0, 0, 0, 0.70);
+	.btn-close{
+		border: 0;
+		background-image: url('../icon/close.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		opacity: 1;
+		outline: none;
+	}
+}
+.modal-dialog {margin: 0 auto}
+.modal-content {
+	border-radius: 6px;
+	padding: 20px;
+	background: #3F3F3F;
+}
+.popupWrap{
+	max-width: 640px;width: 100%;
+	h4{
+		font-weight: 700;
+		font-family: $mark_bold;
+		font-size: 14px;
+		line-height: 1.52;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: #EEEEEE;
+	}
+}
+.languagePopup{
+	.modal-dialog {
+		max-width: 640px;width: 100%;
+	}
+}
+
+.langList{
+	grid-gap: 20px;
+	gap: 20px;
+	li{
+		width: calc(25% - 15px);
+		max-width: calc(25% - 15px);
+		padding: 10px;
+		border-radius: 6px;
+		font-size: 15px;
+		font-weight: 400;
+		font-family: $mark_regular;
+		cursor: pointer;
+		transition: all .4s;
+		background-color: transparent;
+		.btn-icon ,
+		.flagIco{
+			font-size: 0;
+			margin-right: 10px;
+		}
+		&.active{
+			background-color: #4C4C4C;
+		}
+
+	}
+}
+
+
+.light-theme {
+	.modal  {
+		background: rgba(255, 255, 255, 0.70);
+		.btn-close {
+			background-image: url('../icon/close-02.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+	.modal-content{
+		background-color: #F2F2F2;
+	}
+	.popupWrap{ 
+		h4{
+			color: #333333;
+		}
+	}
+	.langList{
+		li {
+			color: #333333;
+			&.active {
+				background-color: #DDD;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width : 1200px) {
+	.modal {
+		padding: 15px;
+	}
+}
+@media (max-width : 639px) {
+	.langList li {
+		max-width: calc(33.33% - 13.34px);
+		width: calc(33.33% - 13.34px);
+	}
+}
+@media (max-width : 479px) {
+	.modal {
+		padding: 0;
+		padding: 0 !important;
+		.modal-dialog{
+			height: 100%;
+			transform: none;
+			.modal-content{
+				height: 100%;
+			}
+		}
+	}
+	.langList {
+	    grid-gap: 10px;
+	    gap: 10px;
+	    grid-row-gap: 16px;
+	    row-gap: 16px;
+	} 
+	.langList li {
+		max-width: calc(50% - 5px);
+		width: calc(50% - 5px);
+	}
+	.popupWrap{
+		h4{
+			padding-top: 3px;
+		}
+	}
+
+}

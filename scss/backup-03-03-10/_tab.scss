@@ -1,0 +1,26 @@
+.tabsSec {
+	.nav-link {
+		border: 0;
+		outline: none;
+		border-radius: 0;
+		background-color: transparent;
+		height: 42px;
+	    border-radius: 6px;
+	    display: inline-block;
+	    padding: 0 15px;
+	    line-height: 40px;
+	    font-weight: 700;
+	    &:hover,
+		&.active {
+		    background-color: #B08615;
+		}
+	}
+}
+
+@media(max-width:575px) {
+	.tabsSec {
+		.nav-link {
+			padding: 0 5px;
+		}
+	}
+}

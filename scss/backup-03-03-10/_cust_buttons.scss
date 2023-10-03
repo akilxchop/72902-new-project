@@ -1,0 +1,270 @@
+.btn {
+	position: relative;
+	span{
+		font-size: 0;
+	}
+	background-color: $yellow_color ;
+	border-color: $yellow_color ;
+	color: $white;
+	font-weight: 500;
+	font-family: $font_mark_medium;
+	text-transform: uppercase;
+    padding: 9.2px 20px;
+	font-size: $px14;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    span ,
+    .btn-icon {
+    	margin-right: 5px;
+    	padding: 0;
+    }
+	img{
+		/*margin-right: 5px;*/
+		max-width: 20px;
+	}
+
+	&:hover{
+		border-color: $yellow_color ;
+		background-color: transparent;
+		color: $yellow_color;
+	}
+
+	
+	svg {
+		margin-right: 5px;
+		max-width: 20px;
+		/*path {
+			fill : $white; 
+		}*/
+	}
+	&:hover{
+		svg {
+			path {
+				fill : $yellow_color; 
+			}
+		}
+	}
+	
+
+	&.btn-outline {
+		color: $yellow_color ;
+		/*height: 48px;
+		line-height: 44px;*/
+		padding-top: 13px;
+		padding-bottom: 13px;
+		background-color: transparent;
+		&:hover{
+			background-color: $yellow_color ;
+			border-color: $yellow_color ;
+			color: $white;
+		}
+	}
+
+	&.btn-secondary{
+		background-color: $gray_btn_color;
+		border-color: $gray_btn_color;
+		&:hover{
+			background-color: transparent;
+			border-color: $white ;
+			color: $white ;
+		}
+	}
+	&.flex-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.btn-white-outline {
+		color: $white ;
+		border-color: $white;
+		background-color: transparent;
+		&:hover{
+			background-color: $white;
+			border-color: $white;
+			color: $header_bg ;
+		}
+
+	}
+
+	&.btn-gray-outline {
+		color: $white ;
+		border-color: $gray_color_3;
+		background-color: transparent;
+		&:hover{
+			background-color: $gray_color_3;
+			border-color: $gray_color_3;
+			svg {
+				path {
+					fill : $white; 
+				}
+			}
+		}
+	}
+
+	&.w_250 {
+		width: 250px;
+	}
+
+	&.btn-gray {
+		background-color: $gray_color_4;
+		border-color: $gray_color_4;
+	}
+	
+	&.btn-normal{
+		text-transform: initial;
+	}
+
+	&.btn-left {
+		text-align: left;
+	}
+	&.btn-right {
+		text-align: right;
+	}
+
+}
+
+.header {
+	.btn {
+		text-transform: initial;
+		/*height: 40px;
+		line-height: 36px;*/
+		padding-top: 8.5px;
+		padding-bottom: 8.5px;
+	}
+	.btn-transparent {
+		background-color: transparent;
+		border: none;
+		&:hover {
+			background-color: transparent;
+			border: none;
+			color: $white;
+			svg path {
+			    fill:  $white;
+			}
+		}
+	}
+	.btn{padding: 8.5px 15px;}
+
+	.header-btn{			
+		.btn {
+			padding: 8.5px 20px;
+		}
+		.btn-white-outline{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+
+/* Sidebar Theme Button */
+.theme-btn {
+	background-color: $gray_color_4;
+	border-radius: 6px;
+	margin-bottom: 15px;
+	padding: 4px;
+	.t_btn{
+		font-weight: 400;
+		font-family: $font-family-sans-serif;
+		text-transform: initial;
+		height: 34px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		grid-gap: 5px;
+		gap: 5px;
+		border-radius: 6px;
+	}
+	.btn-light{
+		background-color: $gray_color_4;
+		border:0;
+		cursor: pointer;
+	}
+	.btn-dark{
+		background-color: #222222;
+		cursor: initial
+	}
+
+}
+
+.light-theme {
+	
+	.btn-dark{
+		cursor: pointer;
+		background-color: transparent;
+	}
+	.btn-light {
+		cursor: initial;
+		background-color: $white;
+	}
+
+	.btn{
+		&.svgImg svg,
+		svg {
+			path {
+				fill: #fff;
+			}
+		}
+		&:hover{
+			svg {
+				path {
+					fill : $yellow_color; 
+				}
+			}
+		}
+		&.btn-gray {
+			background-color: $body_light_bg;
+			color: $gray_mid_color;
+			border: $body_light_bg;;
+		}
+		&.btn-gray-outline {
+			color: $gray_mid_color ;
+			border-color: $body_light_bg;
+			background-color: transparent;
+			.svgImg svg,
+				svg{
+				path {
+					fill: $gray_mid_color;
+				}
+			}
+			&:hover{
+				background-color: $gray_color_3;
+				border-color: $gray_color_3;
+				color: $white;
+				.svgImg svg,
+				svg{
+					path {
+						fill: $white;
+					}
+				}
+			}
+
+		}
+
+	}
+	.theme-btn { 
+		background-color: $body_light_bg;
+		.t_btn {
+			color: $gray_mid_color;
+		}
+		
+	}
+	.spin-win {
+        .btn{
+			&.btn-gray {
+				background-color:$gray_mid_color;
+				color: $white;
+				border: $gray_mid_color;
+			}
+		}
+    }
+	.btn.btn-gray {
+		svg {
+			path {
+			    fill: #fff
+			}
+		}
+	}
+}

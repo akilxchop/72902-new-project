@@ -1,0 +1,296 @@
+.table-wrapper{
+	margin-bottom: 50px;
+}
+
+.table-list {
+	color: $white;
+	background-color: $gray_color_2;
+	border-radius: 6px;
+	padding: 6px;
+	a {
+		height: 42px;
+		border-radius: 6px;
+		display: inline-block;
+		padding: 0 15px;
+		line-height: 40px;
+		font-weight: 700;
+		&.active{
+			background-color: $yellow_color;
+		}
+	}
+	.tableLeft{
+		display: flex;
+		grid-gap: 5px;
+		gap: 5px;
+	}
+}
+
+
+.tableData{
+	width: 16%;
+	&.multipalyer {
+		width: 13%;
+	}
+	&.gameData{
+		width: 20%;
+	}
+	&.profAmt{
+		width: 18%;
+	}
+	&.bet-amt{
+		width: 17%;
+	}
+}
+
+.table{
+	tr {
+		td{
+			&.player-name {
+				text-align: center ;
+			}
+			&:last-child {
+				color: $yellow_color;
+				text-align: right;
+				font-weight: 700;
+				font-family: $font_markPro_bold;
+			}
+			&.multipalyer{
+				text-align: center;
+			}
+			&.bet-amt{
+				text-align: right    ;
+			}
+		}
+	}
+}
+
+.table-striped {
+	thead{
+		td {
+			padding: 20px 15px;
+			border: 0;
+			color: $white;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-family: $font_markPro_bold;
+			&:last-child {
+				color: #fff;
+			}
+		}
+	}
+	tbody {
+		tr {
+			color: $white;
+			td{
+				padding: 12px 15px;
+				border: 0;
+				vertical-align: middle;				
+			}
+			&:nth-of-type(odd) {
+				td{
+					color: $white;
+					background-color: $gray_color_2;
+					&:last-child {
+						color: $yellow_color;
+						border-radius: 0 6px 6px 0;
+					}
+					&:first-child {
+						border-radius: 6px 0 0 6px;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+.iconImg{
+	width: 24px; height: 24px;
+	overflow: hidden;
+	font-size: 0;
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+		margin: 0;
+	}
+}
+
+
+
+.light-theme {
+	.table-striped {
+		thead{
+			td {
+				color: #333333;
+				&:last-child {
+					color: #333333;
+				}
+			}
+		}
+		tbody {
+			tr {
+				color:#333333;
+				&:nth-of-type(odd) {
+					td{
+						color: #333333;
+						background-color: $white !important;
+						&:last-child {
+							color: $yellow_color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.table-list {
+		color: $gray_color_2;
+		background-color: $white;
+		a {
+			
+			&.active{
+				background-color: $gray_color_3;
+				color: $white;
+			}
+		}
+	}
+
+}
+
+
+
+@media(min-width : 740px) {
+	.multiplayerAmt {
+		display: none;
+	}
+}
+
+@media(max-width : 991px) {
+	.timeData{
+		text-align: center;
+		width: 14%;
+		
+	}
+	.tableTime {
+		display: block;
+	}
+	.table{
+		thead td {
+			font-size: $px13;
+		} 
+	}
+	.tableData.gameData  {
+		width: 16%;
+	}
+	.tableData.profAmt {
+		width: 20%;
+	}
+	.table-wrapper {margin-bottom: 30px;}
+}
+
+@media(max-width:739px) {
+	.tableData.multipalyer ,
+	.tableData.bet-amt {
+		display: none;
+	}
+	.multiplayerAmt{
+		display: block;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+}
+
+
+@media(max-width:639px) {
+	.table-list  {
+		overflow: hidden;
+		width: 100%;
+		overflow-x: scroll;
+		.tableInSec {width: 610px;}
+	}
+}
+@media(max-width:575px) {
+	.table tbody tr td ,
+	.table thead td {
+		line-height: 1;
+		padding-left: 5px; padding-right: 5px;
+		
+	}
+	.table thead td {
+		font-size: 12px;
+		text-transform: capitalize;
+	}
+	.iconImg {
+		    margin: 0 auto 6px; 
+		display: block
+	}
+	.tableData.gameData {text-align: center;}
+	.tableData {
+		&.timeData {
+			width: 17%;
+		}		
+		&.gameData {
+			width: 26%;
+		}
+		&.player-name{
+			width: 29%;
+		}
+		&.profAmt {
+			width: 33%;
+		}
+
+	} 
+	.table-list a {
+		padding: 0 5px;
+	}
+
+	.table tbody  td{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		&.timeData {
+			font-size: 10px;
+			line-height: 1.8;
+			font-family: 'Mark-SmallCaps-Regular';
+		}
+		&.gameData {
+			font-size: 10px;
+			text-transform: uppercase;
+			font-family: 'Mark-SmallCaps-Regular';
+		}
+		&.profAmt ,
+		&.player-name{
+			font-size: 12px;
+		}
+		&.player-name {
+			 font-family: 'Mark-Regular';
+		}
+	}
+	.table-list .tableLeft {
+		grid-gap: 15px;
+		gap: 15px;
+	}
+}
+
+@media (max-width : 359px) {
+	.tableData {
+		&.timeData {
+			width: 20%;
+		}		
+		&.gameData {
+			width: 25%;
+		}
+		&.player-name{
+			width: 26%;
+		}
+		&.profAmt {
+			width: 30%;
+		}
+
+	} 
+	.table thead td {padding-top: 15px; padding-bottom: 15px;}
+}

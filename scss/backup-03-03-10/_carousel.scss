@@ -1,0 +1,156 @@
+
+.owl-item {
+	.card{
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+	}
+}
+
+.card_wrapper{
+	.card-wrap {
+		margin: 0;
+		position: relative;
+		.owl-dots {
+			padding: 0;
+		}
+	}
+	overflow: hidden;
+}
+
+
+.owl-nav {
+	button {
+		position: absolute;
+		top: 50%;
+		color: #fff;
+		margin: 0;
+		transition: all 0.3s ease-in-out;
+		border: 0;
+		background-color: transparent;
+		padding: 0;
+		background-image: url('../images/next.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain ;
+		top: -51px;
+		width: 24px;
+		height: 24px;
+		span{display: none}
+		&.disabled {
+			opacity: .6;
+		}
+		&.owl-prev {
+			margin-right:0;
+			left:auto;
+			right: 40px;
+			background-image: url('../images/prev.png');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		&.owl-next {
+			right: 0;
+		}
+	}
+}
+
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+
+.owl-nav button:focus {
+    outline: none;
+}
+
+.owl-stage{
+	display: flex;
+}
+
+
+.light-theme {
+
+	.owl-nav {
+		button {
+			background-image: url('../images/next-gray.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain ;
+			
+			&.owl-prev {
+				background-image: url('../images/prev-gray.png');
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+}
+
+
+
+/*----------- Hero Slider*/
+.hero-section {
+	margin-bottom: 50px;
+	border-bottom: 1px solid $gray_color;
+	
+}
+.hero-slider {
+	position: relative;
+	.owl-dots ,
+	.owl-nav{
+		display: none !important;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		left: -52px;
+		top: 0;
+		height: 100%;
+		width: 50px;
+		background-color: $body-bg;
+		z-index: 1;
+	}
+	/*.owl-stage-outer{
+	    margin-left: -20px;
+	}*/
+	.heroItem {
+	    width: 480px !important;
+	}
+}
+
+.light-theme {
+	.hero-slider {
+		position: relative;
+		&:before {
+			background-color: $body_light_bg;
+		}
+	}
+	.hero-section {
+		border-bottom-color: $gray_color_5;
+	}
+}
+
+@media(max-width: 991px) {
+	.owl-nav button {top: -48px;}
+	.hero-section {margin-bottom: 32px;}
+	.hero-slider .heroItem {
+		width: 100vw !important;
+	}
+}
