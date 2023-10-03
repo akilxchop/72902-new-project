@@ -28,10 +28,6 @@
             img{
                 max-width: 100%;
                 height: 32px;
-
-            }
-            .btn-icon {
-                animation: rotate-animation 6s infinite linear;
             }
         }
         a.btn{
@@ -58,8 +54,6 @@
                 transition: all 0.5s;
 
                 span{
-                    padding-right: 10px;
-                    
                     img{
                         width: 18px;
                         height: 18px;
@@ -90,7 +84,7 @@
         margin-top: 26px;
         padding: 0 20px;
 
-        .btn{
+        a.btn{
             margin-bottom: 15px;
         }
 
@@ -124,6 +118,21 @@
                     a {
                         color: $gray_mid_color;
 
+                        span{
+                            path{
+
+                            }
+                        }
+
+                        &:hover{
+                            color: $white;
+
+                            span{
+                                path{
+                                    fill: $white;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -132,15 +141,3 @@
     
 }
 
-
-@keyframes rotate-animation {
-    0% {
-        transform: rotate(0deg);
-  }
-  50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}

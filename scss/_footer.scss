@@ -246,7 +246,7 @@ footer{
 
 @media screen and (max-width: 767px) {
     footer {
-        padding: 40px 0;
+        padding: 40px 0 100px 0;
         
         .footer-top{
             flex-wrap: nowrap;
@@ -281,6 +281,24 @@ footer{
 
             }
 
+        }
+
+        .mobile-footer-tab {
+            ul {
+
+                li{
+                    padding: 10px 5px 12px;
+                    width: 16%;
+                }
+
+                li:nth-last-child(2){
+                    width: 24%;
+                }
+                li:nth-last-child(1){
+                    width: 24%;
+                }
+
+            }
         }
     }
 }
