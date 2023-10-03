@@ -1,0 +1,338 @@
+body{
+	background-color: $body-bg ;
+	color: $body-color;
+	margin: 0;
+ 	padding: 0;
+	font-size: $px14;
+	padding-top: 70px;
+}
+ul {
+	li {list-style: none}
+}
+body.light-theme {
+	color: $gray_mid_color;
+	background-color: $body_light_bg ;
+}
+.header{
+	background-color: $header_bg;
+	padding: 15px 0;
+	z-index: 123;
+	height: 70px;
+}
+
+.img-0 {
+	font-size: 0;
+}
+
+
+
+
+/*
+
+
+.mark_reg {
+	font-family:$font-family-sans-serif ;
+}
+.mark_med{
+	font-family:$font_mark_medium ;
+}
+.mark_bold{
+	font-family: $font_markPro_bold;
+}
+.led_board {
+	font-family:$font_led_board ;
+}
+.american_font {
+	font-family: $font_american_type ;
+}
+.led_calculator{
+	font-family:$font_led_calc ;
+}*/
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*----------- toggle css -----------*/
+
+header{
+
+	.nav-toggle {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+		.hamburger{
+			width: 24px;
+			height: 24px;
+			position: relative;
+			cursor: pointer;
+
+			&:hover{
+				svg{
+					path{
+						fill: $yellow_color;
+					}
+				}
+			}
+		}
+
+	}
+	
+	.header-left{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 242px;
+		width: 100%;
+	}
+
+	.header-right{
+		width: calc(100% - 242px);
+		padding: 0 8.35% 0 7.81%;
+
+		.logo {
+			a{
+				display: block;
+
+				figure{
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.header-btn {
+		grid-gap: 14px;
+		gap: 14px;
+	}
+
+	.login-deposit{
+		grid-gap: 14px;
+		gap: 14px;
+		display: none;
+
+		span{
+			position: relative;
+
+			.count{
+				position: absolute;
+				top: -7px;
+				right: -7px;
+				margin: 0;
+				width: 15px;
+				height: 15px;
+			}
+
+			&.icon-user{
+				width: 32px;
+				height: 32px;
+				display: block;
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				
+				span.count{
+					top: -3px;
+					right: -3px;
+				}
+			}
+		}
+
+		.login-d{
+			cursor: pointer;
+
+			span{
+				.count{
+					margin: 0;
+				}
+			}
+
+
+		}
+
+		.details{
+			font-family: $mark_regular;
+			font-weight: 400;
+			font-size: 13px;
+
+			.hide{
+				img{
+					width: 18px;
+				}
+			}
+		}
+		
+	}
+
+	.mobile-login-user{
+		display: none;
+
+		span{
+			position: relative;
+
+			.count{
+				position: absolute;
+				top: -7px;
+				right: -7px;
+				margin: 0;
+				width: 15px;
+				height: 15px;
+			}
+
+			&.icon-user{
+				width: 32px;
+				height: 32px;
+				display: block;
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				
+				span.count{
+					top: -3px;
+					right: -3px;
+				}
+			}
+		}
+	}
+
+	a.btn{
+		text-transform: uppercase;
+	}
+
+	&.login{
+		.login-deposit{
+			display: flex;
+		}
+
+		.btn{
+			&.hide-md{
+				display: none !important;
+			}
+		}
+	}
+
+	&.logo{
+
+
+		.header-left{
+			.casino-sports{
+				display: none !important;
+			}
+		}
+
+		.header-right{
+			justify-content: center !important;
+			padding: 0 10px;
+
+			.header-btn{
+				display: none !important;
+			}
+		}
+
+	}
+
+	.hide-text{
+		font-size: 14px;
+	}
+
+}
+
+.count {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	background-color: #B08615;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: $px13;
+	font-weight: 700;
+	color: #fff !important;
+	padding: 0;
+	padding-top: 2px;
+	border-radius: 50%;
+	font-family: $font_markPro_bold;
+	line-height: 1;
+
+	&.small-font{
+		font-size: 9px;
+	}
+
+	&.big-font{
+		font-size: $px13;
+	}
+} 
+
+@media screen and (max-width: 991px) {
+	
+	/*---------------------------*/
+
+	header{	
+
+		.header-left{
+			display: none;
+		}
+
+		.header-right{
+			padding: 0 8px;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		&.login {
+
+			.login-deposit{
+				display: none;
+			}
+
+			.mobile-login-user{
+				display: block;
+			}
+
+		}
+
+		.hide-text{
+			font-size: 0;
+		}
+
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		padding: 8px 0;
+		height: 56px;
+
+		.header-right {
+			padding: 0;
+			.logo {
+				max-width: 133px;
+				width: 100%;
+			}
+		}
+		.hide-text{
+			font-size: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+	header{
+
+		.header-btn {
+			.btn {
+				padding: 10px;
+			}
+		}
+
+	}
+}
+

@@ -1,0 +1,349 @@
+    @font-face {
+    font-family: 'Bold LED Board-7';
+    src: url('../fonts/BoldLEDBoard-7.eot');
+    src: url('../fonts/BoldLEDBoard-7.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BoldLEDBoard-7.woff2') format('woff2'),
+        url('../fonts/BoldLEDBoard-7.woff') format('woff'),
+        url('../fonts/BoldLEDBoard-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriter-Bold';
+    src: url('../fonts/AmericanTypewriter-Bold.eot');
+    src: url('../fonts/AmericanTypewriter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AmericanTypewriter-Bold.woff2') format('woff2'),
+        url('../fonts/AmericanTypewriter-Bold.woff') format('woff'),
+        url('../fonts/AmericanTypewriter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'American Typewriter';
+    src: url('../fonts/AmericanTypewriter.eot');
+    src: url('../fonts/AmericanTypewriter.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AmericanTypewriter.woff2') format('woff2'),
+        url('../fonts/AmericanTypewriter.woff') format('woff'),
+        url('../fonts/AmericanTypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriter-Condensed';
+    src: url('../fonts/AmericanTypewriter-Condensed.eot');
+    src: url('../fonts/AmericanTypewriter-Condensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AmericanTypewriter-Condensed.woff2') format('woff2'),
+        url('../fonts/AmericanTypewriter-Condensed.woff') format('woff'),
+        url('../fonts/AmericanTypewriter-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriter-Light';
+    src: url('../fonts/AmericanTypewriter-Light.eot');
+    src: url('../fonts/AmericanTypewriter-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AmericanTypewriter-Light.woff2') format('woff2'),
+        url('../fonts/AmericanTypewriter-Light.woff') format('woff'),
+        url('../fonts/AmericanTypewriter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LED Calculator';
+    src: url('../fonts/LEDCalculator.eot');
+    src: url('../fonts/LEDCalculator.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LEDCalculator.woff2') format('woff2'),
+        url('../fonts/LEDCalculator.woff') format('woff'),
+        url('../fonts/LEDCalculator.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Mark-Hairline-Italic';
+    src: url('../fonts/Mark-Hairline-Italic.eot');
+    src: local('Mark-Hairline-Italic'),
+        url('../fonts/Mark-Hairline-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Hairline-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Hairline-Italic.woff') format('woff'),
+        url('../fonts/Mark-Hairline-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Medium';
+    src: url('../fonts/Mark-Medium.eot');
+    src: local('Mark-Medium'),
+        url('../fonts/Mark-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Medium.woff2') format('woff2'),
+        url('../fonts/Mark-Medium.woff') format('woff'),
+        url('../fonts/Mark-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Black';
+    src: url('../fonts/Mark-Black.eot');
+    src: local('Mark-Black'),
+        url('../fonts/Mark-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Black.woff2') format('woff2'),
+        url('../fonts/Mark-Black.woff') format('woff'),
+        url('../fonts/Mark-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Regular-Italic';
+    src: url('../fonts/Mark-Regular-Italic.eot');
+    src: local('Mark-Regular-Italic'),
+        url('../fonts/Mark-Regular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Regular-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Regular-Italic.woff') format('woff'),
+        url('../fonts/Mark-Regular-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Extralight-Italic';
+    src: url('../fonts/Mark-Extralight-Italic.eot');
+    src: local('Mark-Extralight-Italic'),
+        url('../fonts/Mark-Extralight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Extralight-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Extralight-Italic.woff') format('woff'),
+        url('../fonts/Mark-Extralight-Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Light';
+    src: url('../fonts/Mark-Light.eot');
+    src: local('Mark-Light'),
+        url('../fonts/Mark-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Light.woff2') format('woff2'),
+        url('../fonts/Mark-Light.woff') format('woff'),
+        url('../fonts/Mark-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Heavy';
+    src: url('../fonts/Mark-Heavy.eot');
+    src: local('Mark-Heavy'),
+        url('../fonts/Mark-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Heavy.woff2') format('woff2'),
+        url('../fonts/Mark-Heavy.woff') format('woff'),
+        url('../fonts/Mark-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Bold';
+    src: url('../fonts/Mark-Bold.eot');
+    src: local('Mark-Bold'),
+        url('../fonts/Mark-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Bold.woff2') format('woff2'),
+        url('../fonts/Mark-Bold.woff') format('woff'),
+        url('../fonts/Mark-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Heavy-Italic';
+    src: url('../fonts/Mark-Heavy-Italic.eot');
+    src: local('Mark-Heavy-Italic'),
+        url('../fonts/Mark-Heavy-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Heavy-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Heavy-Italic.woff') format('woff'),
+        url('../fonts/Mark-Heavy-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Black-Italic';
+    src: url('../fonts/Mark-Black-Italic.eot');
+    src: local('Mark-Black-Italic'),
+        url('../fonts/Mark-Black-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Black-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Black-Italic.woff') format('woff'),
+        url('../fonts/Mark-Black-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Light-Italic';
+    src: url('../fonts/Mark-Light-Italic.eot');
+    src: local('Mark-Light-Italic'),
+        url('../fonts/Mark-Light-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Light-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Light-Italic.woff') format('woff'),
+        url('../fonts/Mark-Light-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Thin-Italic';
+    src: url('../fonts/Mark-Thin-Italic.eot');
+    src: local('Mark-Thin-Italic'),
+        url('../fonts/Mark-Thin-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Thin-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Thin-Italic.woff') format('woff'),
+        url('../fonts/Mark-Thin-Italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Thin';
+    src: url('../fonts/Mark-Thin.eot');
+    src: local('Mark-Thin'),
+        url('../fonts/Mark-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Thin.woff2') format('woff2'),
+        url('../fonts/Mark-Thin.woff') format('woff'),
+        url('../fonts/Mark-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Extralight';
+    src: url('../fonts/Mark-Extralight.eot');
+    src: local('Mark-Extralight'),
+        url('../fonts/Mark-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Extralight.woff2') format('woff2'),
+        url('../fonts/Mark-Extralight.woff') format('woff'),
+        url('../fonts/Mark-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-SmallCaps-Black';
+    src: url('../fonts/Mark-SmallCaps-Black.eot');
+    src: local('Mark-SmallCaps-Black'),
+        url('../fonts/Mark-SmallCaps-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-SmallCaps-Black.woff2') format('woff2'),
+        url('../fonts/Mark-SmallCaps-Black.woff') format('woff'),
+        url('../fonts/Mark-SmallCaps-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Book-Italic';
+    src: url('../fonts/Mark-Book-Italic.eot');
+    src: local('Mark-Book-Italic'),
+        url('../fonts/Mark-Book-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Book-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Book-Italic.woff') format('woff'),
+        url('../fonts/Mark-Book-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-SmallCaps-Regular';
+    src: url('../fonts/Mark-SmallCaps-Regular.eot');
+    src: local('Mark-SmallCaps-Regular'),
+        url('../fonts/Mark-SmallCaps-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-SmallCaps-Regular.woff2') format('woff2'),
+        url('../fonts/Mark-SmallCaps-Regular.woff') format('woff'),
+        url('../fonts/Mark-SmallCaps-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Regular';
+    src: url('../fonts/Mark-Regular.eot');
+    src: local('Mark-Regular'),
+        url('../fonts/Mark-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Regular.woff2') format('woff2'),
+        url('../fonts/Mark-Regular.woff') format('woff'),
+        url('../fonts/Mark-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Hairline';
+    src: url('../fonts/Mark-Hairline.eot');
+    src: local('Mark-Hairline'),
+        url('../fonts/Mark-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Hairline.woff2') format('woff2'),
+        url('../fonts/Mark-Hairline.woff') format('woff'),
+        url('../fonts/Mark-Hairline.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark-Bold-Italic';
+    src: url('../fonts/Mark-Bold-Italic.eot');
+    src: local('Mark-Bold-Italic'),
+        url('../fonts/Mark-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Bold-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Bold-Italic.woff') format('woff'),
+        url('../fonts/Mark-Bold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Medium-Italic';
+    src: url('../fonts/Mark-Medium-Italic.eot');
+    src: local('Mark-Medium-Italic'),
+        url('../fonts/Mark-Medium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Medium-Italic.woff2') format('woff2'),
+        url('../fonts/Mark-Medium-Italic.woff') format('woff'),
+        url('../fonts/Mark-Medium-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mark-Book';
+    src: url('../fonts/Mark-Book.eot');
+    src: local('Mark-Book'),
+        url('../fonts/Mark-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Book.woff2') format('woff2'),
+        url('../fonts/Mark-Book.woff') format('woff'),
+        url('../fonts/Mark-Book.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MarkPro-Bold';
+    src: url('../fonts/MarkPro-Bold.eot');
+    src: url('../fonts/MarkPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MarkPro-Bold.woff2') format('woff2'),
+        url('../fonts/MarkPro-Bold.woff') format('woff'),
+        url('../fonts/MarkPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
